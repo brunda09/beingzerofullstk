@@ -12,10 +12,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.x=this.x + " new";
+    this.x=this.x + "new";
   }
   fnclick(){
-    this.x=this.x + " new";
+    this.x=this.x + "new";
   }
 
 }
