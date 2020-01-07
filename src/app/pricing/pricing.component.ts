@@ -6,12 +6,12 @@ import { DataService } from '../data.service';
   styleUrls: ['./pricing.component.css']
 })
 export class PricingComponent implements OnInit {
- users:any=[];
+ users:any= [];
  count=0;
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getData().subscribe(d => {
+    this.data.getData().subscribe(d=> {
       this.users= d;
       //alert(this.users.['arr'].length);
       this.count=this.users.length;
